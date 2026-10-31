@@ -10,8 +10,8 @@ import { getSettings } from "@/data/db";
 
 export const metadata: Metadata = {
   title: "Customer Care",
-  description: "A modern 7S Suzuki workshop, genuine parts and a dedicated care desk in Rawalpindi, serving Islamabad too, we keep your Suzuki at its best.",
-  keywords: ["Suzuki customer care Rawalpindi", "Suzuki customer care Islamabad", "Suzuki workshop Rawalpindi", "Car service Islamabad"],
+  description: "A modern 7S workshop, genuine parts and a dedicated care desk in Rawalpindi, serving Islamabad too, we keep your vehicle at its best.",
+  keywords: ["Customer care Rawalpindi", "Customer care Islamabad", "Car workshop Rawalpindi", "Car service Islamabad"],
   alternates: { canonical: "/customer-care" },
 };
 
@@ -21,7 +21,7 @@ export default async function CustomerCarePage() {
   const settings = await getSettings();
   return (
     <>
-      <PageHero eyebrow="7S Workshop" title="Customer Care" subtitle="A modern workshop, genuine parts and a dedicated care desk, we keep your Suzuki at its best." />
+      <PageHero eyebrow="7S Workshop" title="Customer Care" subtitle="A modern workshop, genuine parts and a dedicated care desk, we keep your vehicle at its best." />
 
       <section className="container-site pt-[50px]">
         <Reveal>

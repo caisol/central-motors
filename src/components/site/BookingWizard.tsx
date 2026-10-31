@@ -20,7 +20,7 @@ const WEEKDAYS = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const MONTHS_FULL = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
 
-/** Popular older Suzukis the workshop still services every day. */
+/** Popular vehicles the workshop services every day. */
 const LEGACY_MODELS = ["WagonR", "Mehran", "Bolan", "Ravi", "Baleno", "Liana", "Ciaz", "Vitara", "Jimny", "APV", "Khyber", "Margalla"];
 const OTHER = "__other__";
 

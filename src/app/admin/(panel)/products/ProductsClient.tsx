@@ -93,7 +93,7 @@ export default function ProductsClient({
 
   return (
     <>
-      <PageHeader title="Products" subtitle="Manage all Suzuki vehicles">
+      <PageHeader title="Products" subtitle="Manage all vehicles">
         {canEdit && (
           <LinkButton href="/admin/products/new">
             <PlusIcon className="h-4 w-4" /> Add Product

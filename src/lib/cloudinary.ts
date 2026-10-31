@@ -8,7 +8,7 @@ cloudinary.config({ secure: true });
 export { cloudinary };
 
 /** Default folder so all dealership media is grouped in the Cloudinary library. */
-const FOLDER = "suzuki-central-motors";
+const FOLDER = "central-motors";
 
 export type UploadedImage = {
   url: string; // CDN https URL to store in the DB

@@ -54,7 +54,7 @@ async function main() {
     await db.user.upsert({
       where: { email },
       update: { role: Role.SUPER_ADMIN, isActive: true },
-      create: { email, name: "Suzuki", passwordHash, role: Role.SUPER_ADMIN },
+      create: { email, name: "Central Motors Admin", passwordHash, role: Role.SUPER_ADMIN },
     });
     console.log(`✓ super-admin: ${email} (env bootstrap — no snapshot present)`);
   }

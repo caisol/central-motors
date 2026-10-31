@@ -13,9 +13,9 @@ export async function generateMetadata({ params }: { params: { category: string 
   const c = await getCategoryBySlug(params.category);
   if (!c) return { title: "Category not found" };
   return {
-    title: `Suzuki ${c.name} Price in Pakistan`,
+    title: `${c.name} Price in Pakistan`,
     description: c.blurb,
-    keywords: [`${c.name}`, `Suzuki ${c.name} price Pakistan`, "Suzuki Rawalpindi", "Suzuki Islamabad"],
+    keywords: [`${c.name}`, `${c.name} price Pakistan`, "Rawalpindi car dealer", "Islamabad car dealership"],
     alternates: { canonical: `/products/${c.slug}` },
   };
 }

@@ -500,7 +500,7 @@ export default function SpecsEditor({
                     <ImageUploader
                       value={(c.images ?? []).map((url) => ({ url }))}
                       onChange={(imgs) => setColor(i, { images: imgs.map((x) => x.url) })}
-                      folder="suzuki-central-motors/products/colors"
+                      folder="central-motors/products/colors"
                     />
                     <p className="mt-2 text-[12px] text-ink-faint">Shown in the gallery when a visitor selects this colour. Leave empty to fall back to the standard photos.</p>
                   </div>

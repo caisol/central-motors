@@ -10,15 +10,15 @@ export const metadata: Metadata = {
   title: "Genuine Parts",
   description:
     "100% authentic Genuine Parts, Accessories and ECSTAR oils. Engineered to fit, built to last, and available straight from our parts counter, serving Rawalpindi and Islamabad.",
-  keywords: ["Suzuki genuine parts Pakistan", "Suzuki parts Rawalpindi", "Suzuki parts Islamabad", "ECSTAR oil Suzuki", "Suzuki accessories"],
+  keywords: ["Genuine parts Pakistan", "Car parts Rawalpindi", "Auto parts Islamabad", "Certified engine oil", "Genuine car accessories"],
   alternates: { canonical: "/genuine-parts" },
 };
 
 const PARTS_PHONE = "+92 308 2010254";
 
 const BADGES = [
-  { src: "/brand/suzuki-genuine-parts.png", alt: "Genuine Parts", w: 984, h: 337 },
-  { src: "/brand/suzuki-genuine-accessories.png", alt: "Genuine Accessories", w: 966, h: 336 },
+  { src: "/brand/central-motors-wordmark.png", alt: "Genuine Parts", w: 984, h: 337 },
+  { src: "/brand/central-motors-wordmark.png", alt: "Genuine Accessories", w: 966, h: 336 },
   { src: "/brand/ecstar.png", alt: "Certified Oils & Fluids", w: 788, h: 350 },
 ];
 
@@ -33,7 +33,7 @@ const CATEGORIES = [
   { icon: "diagnostics", title: "Engine Parts", body: "Filters, belts, plugs and components built to precise manufacturer specifications." },
   { icon: "bodyshop", title: "Body Parts", body: "Panels, bumpers and lights that fit precisely and preserve your vehicle's value." },
   { icon: "parts", title: "Service Kits", body: "Complete maintenance kits for scheduled services, everything in one box." },
-  { icon: "care", title: "Accessories", body: "Genuine Suzuki accessories to personalise and protect your vehicle." },
+  { icon: "care", title: "Accessories", body: "Genuine accessories to personalise and protect your vehicle." },
   { icon: "warranty", title: "Parts Warranty", body: "Selected genuine parts carry a 6-month over-the-counter warranty." },
   { icon: "roadside", title: "Fast Availability", body: "A well-stocked counter with quick ordering for anything not in stock." },
 ];

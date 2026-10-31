@@ -79,7 +79,7 @@ export default function NewsForm({ post }: { post?: NewsFormData }) {
         </div>
         <div>
           <label className="flabel">Cover image</label>
-          <ImageUploader value={cover} onChange={(imgs) => setCover(imgs.slice(-1))} folder="suzuki-central-motors/news" />
+          <ImageUploader value={cover} onChange={(imgs) => setCover(imgs.slice(-1))} folder="central-motors/news" />
         </div>
       </section>
 

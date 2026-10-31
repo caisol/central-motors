@@ -9,23 +9,23 @@ import { telHref, cn } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Extended Warranty",
   description:
-    "Extend your Suzuki's cover beyond the standard 3 years / 60,000 km. Plans tailored to your usage, serviced and honoured at our authorised 7S workshop serving Rawalpindi and Islamabad.",
-  keywords: ["Suzuki extended warranty Pakistan", "Suzuki warranty Rawalpindi", "Suzuki warranty Islamabad"],
+    "Extend your vehicle's cover beyond the standard 3 years / 60,000 km. Plans tailored to your usage, serviced and honoured at our authorised 7S workshop serving Rawalpindi and Islamabad.",
+  keywords: ["Extended warranty Pakistan", "Warranty Rawalpindi", "Auto warranty Islamabad"],
   alternates: { canonical: "/after-sales/extended-warranty" },
 };
 
-const WARRANTY_PHONE = "0315-8709623";
+const WARRANTY_PHONE = "051-4917112";
 
 const BENEFITS = [
   { icon: "warranty", title: "Beyond standard cover", body: "Protection that continues after the manufacturer's 3 years / 60,000 km period ends." },
-  { icon: "workshop", title: "Honoured at our workshop", body: "Claims handled in-house by certified Suzuki technicians using genuine parts." },
+  { icon: "workshop", title: "Honoured at our workshop", body: "Claims handled in-house by certified technicians using genuine parts." },
   { icon: "finance", title: "Plans to suit your usage", body: "Pick a term that matches how far and how often you actually drive." },
   { icon: "certified", title: "Stronger at resale", body: "A documented, transferable warranty adds buyer confidence and resale value." },
 ];
 
 const STEPS = [
   { n: "01", title: "Choose your plan", body: "Tell us your model and how you drive. We recommend a term and cover level that fits." },
-  { n: "02", title: "Drive with cover", body: "Enjoy your Suzuki knowing the important components are protected against surprises." },
+  { n: "02", title: "Drive with cover", body: "Enjoy your vehicle knowing the important components are protected against surprises." },
   { n: "03", title: "Claim at our workshop", body: "If anything's needed, bring it in. We handle the claim and repair with genuine parts." },
 ];
 
@@ -35,14 +35,14 @@ export default function ExtendedWarrantyPage() {
       <PageHero
         eyebrow="After-Sales · Warranty"
         title="Extended Warranty"
-        subtitle="Keep your Suzuki protected well beyond the standard cover, on terms that suit how you drive."
+        subtitle="Keep your vehicle protected well beyond the standard cover, on terms that suit how you drive."
       />
 
       {/* intro + highlight */}
       <section className="container-site grid items-center gap-8 pt-[50px] lg:grid-cols-[1.4fr_1fr]">
         <Reveal>
           <p className="max-w-[600px] text-[15.5px] leading-relaxed text-ink-muted">
-            Your Suzuki arrives with a solid factory warranty. An extended plan simply carries that
+            Your vehicle arrives with a solid factory warranty. An extended plan simply carries that
             peace of mind further. Cover stays with the car, claims are handled at our own workshop,
             and every repair uses genuine OEM parts.
           </p>
@@ -120,7 +120,7 @@ export default function ExtendedWarrantyPage() {
         <div className="flex flex-col items-center justify-between gap-5 rounded-[18px] bg-suzuki-dark px-8 py-8 text-center sm:flex-row sm:text-left">
           <div>
             <h2 className="font-display text-xl font-extrabold text-white">Talk to our warranty desk</h2>
-            <p className="mt-1.5 max-w-[460px] leading-relaxed text-[#C3D2EA]">Our team will walk you through the plans and find the right cover for your Suzuki.</p>
+            <p className="mt-1.5 max-w-[460px] leading-relaxed text-[#C3D2EA]">Our team will walk you through the plans and find the right cover for your vehicle.</p>
           </div>
           <div className="flex flex-shrink-0 flex-wrap justify-center gap-3">
             <a href={telHref(WARRANTY_PHONE)} className="btn-light">Call {WARRANTY_PHONE}</a>

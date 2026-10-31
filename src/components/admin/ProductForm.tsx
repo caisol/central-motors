@@ -250,7 +250,7 @@ export default function ProductForm({
       {/* Images */}
       <section className="rounded-2xl border border-line bg-white p-6 shadow-card">
         <h2 className="mb-4 font-display text-lg font-bold text-suzuki-dark">Images</h2>
-        <ImageUploader value={images} onChange={setImages} folder="suzuki-central-motors/products" />
+        <ImageUploader value={images} onChange={setImages} folder="central-motors/products" />
       </section>
 
       <div className="flex gap-3">

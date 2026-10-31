@@ -17,13 +17,13 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   const p = await getProductBySlug(params.slug);
   if (!p) return { title: "Model not found" };
   const year = new Date().getFullYear();
-  const title = `Suzuki ${p.name} ${year} Price in Pakistan, Specs & Variants`;
-  const description = `Suzuki ${p.name} price in Pakistan starts at ${formatPKR(p.startPrice)}. Compare ${p.variants.length > 1 ? `all ${p.variants.length} variants, ` : ""}specs, colours and features, and book a test drive at Central Motors Rawalpindi, an authorised dealership.`;
+  const title = `${p.name} ${year} Price in Pakistan, Specs & Variants`;
+  const description = `${p.name} price in Pakistan starts at ${formatPKR(p.startPrice)}. Compare ${p.variants.length > 1 ? `all ${p.variants.length} variants, ` : ""}specs, colours and features, and book a test drive at Central Motors Rawalpindi, an authorised dealership.`;
   return {
     title,
     description,
     keywords: [
-      `Central Motors ${p.name}`, `Suzuki ${p.name} price in Pakistan`, `${p.name} ${year}`,
+      `Central Motors ${p.name}`, `${p.name} price in Pakistan`, `${p.name} ${year}`,
       `${p.name} price`, `${p.name} specs`, `${p.name} variants`, "Cars Pakistan",
     ],
     alternates: { canonical: `/product/${p.slug}` },

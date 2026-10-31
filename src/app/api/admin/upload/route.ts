@@ -34,7 +34,7 @@ export async function POST(req: Request) {
   try {
     const buf = Buffer.from(await file.arrayBuffer());
     const dataUri = `data:${file.type};base64,${buf.toString("base64")}`;
-    const folder = (form.get("folder") as string) || "suzuki-central-motors";
+    const folder = (form.get("folder") as string) || "central-motors";
     const result = await uploadImage(dataUri, { folder });
     return NextResponse.json({ ok: true, url: result.url, publicId: result.publicId });
   } catch (err) {

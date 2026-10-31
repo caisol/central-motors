@@ -1,4 +1,4 @@
-// Auto-generated from the current Suzuki lineup (reference + official renders). Do not hand-edit.
+// Auto-generated from the current vehicle lineup (reference + official renders). Do not hand-edit.
 export type ProductAssets = { images: string[]; blur: string[]; brochure: string | null };
 
 export const productAssets: Record<string, ProductAssets> = {

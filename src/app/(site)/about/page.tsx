@@ -5,8 +5,8 @@ import { aboutStats, ceo, mission, vision } from "@/data";
 
 export const metadata: Metadata = {
   title: "About Us",
-  description: "Rawalpindi and Islamabad's trusted Suzuki 7S dealership, honest sales, expert service and genuine parts under one roof.",
-  keywords: ["Suzuki dealership Rawalpindi", "Suzuki dealership Islamabad", "about Central Motors", "authorised 7S dealer"],
+  description: "Rawalpindi and Islamabad's trusted 7S dealership, honest sales, expert service and genuine parts under one roof.",
+  keywords: ["dealership Rawalpindi", "dealership Islamabad", "about Central Motors", "authorised 7S dealer"],
   alternates: { canonical: "/about" },
 };
 
@@ -18,10 +18,10 @@ export default function AboutPage() {
         <div className="container-site relative">
           <div className="eyebrow-light">Who we are</div>
           <h1 className="mt-2.5 max-w-[760px] font-display text-[clamp(30px,4.4vw,50px)] font-black leading-[1.05] tracking-tight text-white">
-            Rawalpindi&apos;s trusted Suzuki 7S dealership.
+            Rawalpindi&apos;s trusted 7S dealership.
           </h1>
           <p className="mt-4 max-w-[620px] text-[17px] leading-relaxed text-[#C3D2EA]">
-            For over a decade, Central Motors has put Suzuki families first, combining honest sales, expert service and genuine parts under one roof on Grand Trunk Road.
+            For over a decade, Central Motors has put customers and families first, combining honest sales, expert service and genuine parts under one roof on Grand Trunk Road.
           </p>
         </div>
       </section>
@@ -42,14 +42,14 @@ export default function AboutPage() {
         <Reveal className="relative min-h-[300px] overflow-hidden rounded-[20px] border border-line shadow-card">
           <Image
             src="/images/aftersales/workshop-technician.jpg"
-            alt="Our certified Suzuki technician at work in the workshop"
+            alt="Our certified technician at work in the workshop"
             fill
             sizes="(max-width:1024px) 92vw, 46vw"
             className="object-cover"
           />
           <div aria-hidden className="absolute inset-0 bg-[linear-gradient(to_top,rgba(4,15,40,.55),transparent_46%)]" />
           <div className="absolute bottom-4 left-4 rounded-full bg-black/35 px-3 py-1.5 text-[12px] font-bold tracking-wide text-white backdrop-blur-sm">
-            Suzuki 7S · Authorised
+            Central Motors 7S · Dealership
           </div>
         </Reveal>
       </section>

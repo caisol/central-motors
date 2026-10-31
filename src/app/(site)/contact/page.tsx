@@ -8,7 +8,7 @@ import { telHref, formatTel } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Contact Us",
   description: "Contact Central Motors, an authorised dealership serving Rawalpindi and Islamabad. Questions about a model, a service or a part? Send us a message and our team will get back to you.",
-  keywords: ["Suzuki dealer Rawalpindi contact", "Suzuki dealer Islamabad contact", "Central Motors contact", "Central Motors showroom address Rawalpindi"],
+  keywords: ["Dealership Rawalpindi contact", "Dealership Islamabad contact", "Central Motors contact", "Central Motors showroom address Rawalpindi"],
   alternates: { canonical: "/contact" },
 };
 

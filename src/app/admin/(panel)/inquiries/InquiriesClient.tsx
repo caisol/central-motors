@@ -375,7 +375,7 @@ export default function InquiriesClient({
             <textarea value={replyBody} onChange={(e) => setReplyBody(e.target.value)} rows={10} className="field resize-none" />
           </div>
           <p className="text-xs text-ink-faint">
-            Sent from contact@caisol.com. The customer&apos;s reply will arrive in that mailbox.
+            Sent from info@centralmotors.com.pk. The customer&apos;s reply will arrive in that mailbox.
           </p>
         </div>
       </SlideOver>

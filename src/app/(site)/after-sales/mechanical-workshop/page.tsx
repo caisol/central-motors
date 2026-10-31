@@ -6,14 +6,14 @@ export const metadata: Metadata = {
   title: "Mechanical Workshop",
   description:
     "Our authorised mechanical workshop in Rawalpindi, serving Islamabad, scheduled maintenance, engine diagnostics, AC, brakes, electrical and more, by certified technicians using genuine parts.",
-  keywords: ["Suzuki workshop Rawalpindi", "Suzuki mechanic Islamabad", "Suzuki service center", "Suzuki maintenance Pakistan"],
+  keywords: ["Car workshop Rawalpindi", "Mechanic Islamabad", "Automotive service center", "Car maintenance Rawalpindi"],
   alternates: { canonical: "/after-sales/mechanical-workshop" },
 };
 
 const SECTIONS = [
-  { heading: "Certified Suzuki technicians", body: "A trained team that works on Suzuki vehicles every day, kept current through continuous factory training." },
+  { heading: "Certified technicians", body: "A trained team that works on vehicles every day, kept current through continuous factory training." },
   { heading: "Factory-grade diagnostics", body: "Computerised tools that find faults accurately the first time, no guesswork, no repeat visits." },
-  { heading: "Genuine parts & warranty", body: "Every job is finished with authentic Suzuki parts and backed by a warranty on the work carried out." },
+  { heading: "Genuine parts & warranty", body: "Every job is finished with authentic OEM parts and backed by a warranty on the work carried out." },
 ];
 
 const STATS = [
@@ -28,20 +28,20 @@ export default function MechanicalWorkshopPage() {
     <ServiceDetail
       eyebrow="After-Sales · Workshop"
       title="Mechanical Workshop"
-      intro="From your Suzuki's first running-in inspection to major repairs years later, our workshop handles the whole journey in-house, to factory standards, protecting its performance, safety and resale value."
+      intro="From your vehicle's first running-in inspection to major repairs years later, our workshop handles the whole journey in-house, to factory standards, protecting its performance, safety and resale value."
       icon="workshop"
       image="/images/aftersales/workshop.jpg"
       imageAlt="Technician servicing a car engine in our workshop"
       tone="cool"
       chips={["Open 7 days · incl. Sundays", "Certified technicians", "Genuine parts", "Warranty on work", "Factory-grade tools"]}
       book={{ href: "/service-appointment", label: "Book an appointment" }}
-      callPhone="0315-8709631"
+      callPhone="051-4917112"
       stats={STATS}
       servicesHeading="Our complete workshop services"
-      servicesIntro="Everything your Suzuki needs under one roof, carried out by certified technicians using genuine OEM parts and ECSTAR oils."
+      servicesIntro="Everything your vehicle needs under one roof, carried out by certified technicians using genuine OEM parts and certified oils."
       services={workshopServices}
       sections={SECTIONS}
-      closing="Whether it's a routine service or a complex repair, our workshop treats every Suzuki with the same care, and hands it back running exactly as it should."
+      closing="Whether it's a routine service or a complex repair, our workshop treats every vehicle with the same care, and hands it back running exactly as it should."
     />
   );
 }

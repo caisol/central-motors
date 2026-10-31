@@ -59,7 +59,7 @@ export default function LoginForm() {
             required
             value={email}
             onChange={(e) => setEmail(e.target.value)}
-            placeholder="admin@scm.com.pk"
+            placeholder="admin@centralmotors.com.pk"
             className="field pl-11"
           />
         </div>

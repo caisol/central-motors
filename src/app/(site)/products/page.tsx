@@ -7,7 +7,7 @@ export const metadata: Metadata = {
   title: "Car Prices in Pakistan, All New Models",
   description:
     "Compare all new car prices in Pakistan: Fronx, Swift, Cultus, Alto and Every. Official variants, specs and starting prices at Central Motors, authorised dealership in Rawalpindi.",
-  keywords: ["Suzuki car prices Pakistan", "new vehicle models", "Fronx price", "Swift price", "Alto price", "Cultus price"],
+  keywords: ["Car prices Pakistan", "new vehicle models", "Fronx price", "Swift price", "Alto price", "Cultus price"],
   alternates: { canonical: "/products" },
 };
 

@@ -7,7 +7,7 @@ import { getJobs } from "@/data/db";
 
 export const metadata: Metadata = {
   title: "Careers",
-  description: "Build your career with Rawalpindi and Islamabad's trusted Suzuki dealership. View current vacancies and our recruitment process.",
+  description: "Build your career with Rawalpindi and Islamabad's trusted automotive dealership. View current vacancies and our recruitment process.",
   alternates: { canonical: "/careers" },
 };
 
@@ -17,7 +17,7 @@ export default async function CareersPage() {
   const jobs = await getJobs();
   return (
     <>
-      <PageHero eyebrow="Join us" title="Careers" subtitle="Build your career with Rawalpindi's trusted Suzuki dealership." />
+      <PageHero eyebrow="Join us" title="Careers" subtitle="Build your career with Rawalpindi's trusted automotive dealership." />
 
       <section className="container-site pt-[50px]">
         <h2 className="mb-5 font-display text-2xl font-extrabold text-ink">Current vacancies</h2>

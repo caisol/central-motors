@@ -5,20 +5,20 @@ import { bodyShopServices } from "@/data";
 export const metadata: Metadata = {
   title: "Paint & Body Shop",
   description:
-    "Our Suzuki paint & body shop in Rawalpindi, serving Islamabad, collision repair, denting, colour-matched painting, frame straightening and insurance claims, restoring your car to factory condition.",
-  keywords: ["Suzuki paint shop Rawalpindi", "Suzuki body shop Islamabad", "Suzuki collision repair", "car denting painting Rawalpindi"],
+    "Our paint & body shop in Rawalpindi, serving Islamabad, collision repair, denting, colour-matched painting, frame straightening and insurance claims, restoring your car to factory condition.",
+  keywords: ["Paint shop Rawalpindi", "Body shop Islamabad", "Collision repair", "Car denting painting Rawalpindi"],
   alternates: { canonical: "/after-sales/paint-body-shop" },
 };
 
 const SECTIONS = [
   { heading: "Colour-matched paint booth", body: "A dust-free, baked spray booth with computerised paint matching for a flawless, factory-perfect finish." },
-  { heading: "Genuine panels & parts", body: "Original Suzuki panels and components that fit precisely and protect your car's safety and resale value." },
+  { heading: "Genuine panels & parts", body: "Original certified panels and components that fit precisely and protect your car's safety and resale value." },
   { heading: "Restored to factory standard", body: "Structural work on precision jigs, so your vehicle leaves looking, and driving, exactly like it did new." },
 ];
 
 const STATS = [
   { num: "42+", label: "Years of body repairs" },
-  { num: "OEM", label: "Genuine Suzuki panels" },
+  { num: "OEM", label: "Genuine OEM panels" },
   { num: "100%", label: "Colour-matched paint" },
   { num: "1:1", label: "Factory-standard finish" },
 ];
@@ -28,20 +28,20 @@ export default function PaintBodyShopPage() {
     <ServiceDetail
       eyebrow="After-Sales · Body Shop"
       title="Paint & Body Shop"
-      intro="From a car-park scuff to major collision damage, our body shop restores your Suzuki to its original condition, appearance and safety alike. We handle the repair and the insurance paperwork, so getting back on the road is simple."
+      intro="From a car-park scuff to major collision damage, our body shop restores your vehicle to its original condition, appearance and safety alike. We handle the repair and the insurance paperwork, so getting back on the road is simple."
       icon="bodyshop"
       image="/images/aftersales/body-shop.jpg"
       imageAlt="Car panel being spray-painted in our body shop booth"
       tone="red"
       chips={["Open 7 days · incl. Sundays", "Colour-matched paint", "Genuine panels", "Insurance claims", "Factory finish"]}
       book={{ href: "/online-inquiry", label: "Get a repair estimate" }}
-      callPhone="0315-8709624"
+      callPhone="051-4917112"
       stats={STATS}
       servicesHeading="Our complete body & paint services"
-      servicesIntro="A wide range of body and paint work to keep your Suzuki looking pristine, carried out with genuine parts and a factory-matched finish."
+      servicesIntro="A wide range of body and paint work to keep your vehicle looking pristine, carried out with genuine parts and a factory-matched finish."
       services={bodyShopServices}
       sections={SECTIONS}
-      closing="Whether it's a minor touch-up or a full restoration, we take pride in returning your Suzuki looking, and feeling, brand new."
+      closing="Whether it's a minor touch-up or a full restoration, we take pride in returning your vehicle looking, and feeling, brand new."
     />
   );
 }
