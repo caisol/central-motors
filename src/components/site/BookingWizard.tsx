@@ -280,7 +280,7 @@ export default function BookingWizard({ models = [] }: { models?: string[] }) {
                       ))}
                     </optgroup>
                   )}
-                  <optgroup label="Other Suzuki models">
+                  <optgroup label="Other vehicle models">
                     {LEGACY_MODELS.filter((m) => !models.includes(m)).map((m) => (
                       <option key={m} value={m}>{m}</option>
                     ))}

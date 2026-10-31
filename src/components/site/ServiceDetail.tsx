@@ -14,9 +14,9 @@ const ACCENT: Record<string, string> = {
 };
 
 const BADGES = [
-  { src: "/brand/suzuki-genuine-parts.png", alt: "Suzuki Genuine Parts", w: 984, h: 337 },
-  { src: "/brand/suzuki-genuine-accessories.png", alt: "Suzuki Genuine Accessories", w: 966, h: 336 },
-  { src: "/brand/ecstar.png", alt: "Suzuki ECSTAR", w: 788, h: 350 },
+  { src: "/brand/suzuki-genuine-parts.png", alt: "Genuine Parts", w: 984, h: 337 },
+  { src: "/brand/suzuki-genuine-accessories.png", alt: "Genuine Accessories", w: 966, h: 336 },
+  { src: "/brand/ecstar.png", alt: "Certified Oils & Fluids", w: 788, h: 350 },
 ];
 
 export default function ServiceDetail({
@@ -114,7 +114,7 @@ export default function ServiceDetail({
             {/* authorised badge */}
             <div className="absolute bottom-4 left-4 flex items-center gap-2 rounded-full bg-black/35 px-3 py-1.5 backdrop-blur-sm">
               <Icon className="h-4 w-4 text-white" />
-              <span className="text-[12px] font-bold tracking-wide text-white">Suzuki 7S · Authorised</span>
+              <span className="text-[12px] font-bold tracking-wide text-white">Central Motors 7S · Dealership</span>
             </div>
             <div aria-hidden className="pointer-events-none absolute inset-0 rounded-[24px] ring-1 ring-inset ring-black/10" />
           </div>
@@ -173,7 +173,7 @@ export default function ServiceDetail({
         <section className="container-site pt-12">
           <div className="flex flex-col items-center gap-6 rounded-2xl bg-suzuki-dark px-6 py-7 sm:flex-row sm:justify-between">
             <p className="text-center text-[13.5px] font-medium text-[#C3D2EA] sm:text-left">
-              Every job is completed with <span className="font-bold text-white">100% authentic</span> Suzuki Genuine Parts, Accessories &amp; ECSTAR oils.
+              Every job is completed with <span className="font-bold text-white">100% authentic</span> Genuine Parts, Accessories &amp; Certified Oils.
             </p>
             <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4 rounded-xl bg-white px-6 py-3">
               {BADGES.map((b) => (

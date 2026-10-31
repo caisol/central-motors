@@ -6,8 +6,8 @@ import { getSettings, getProductNames } from "@/data/db";
 
 export const metadata: Metadata = {
   title: "Book a Service",
-  description: "Pick a day and time slot for your Suzuki's workshop visit at Central Motors, Rawalpindi, serving Islamabad too.",
-  keywords: ["Suzuki service booking", "Suzuki workshop appointment Rawalpindi", "Suzuki service Islamabad"],
+  description: "Pick a day and time slot for your vehicle's workshop visit at Central Motors, Rawalpindi, serving Islamabad too.",
+  keywords: ["Car service booking", "Workshop appointment Rawalpindi", "Car service Islamabad"],
   alternates: { canonical: "/service-appointment" },
 };
 

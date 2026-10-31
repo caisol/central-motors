@@ -4,10 +4,10 @@ import ProductsBrowser from "@/components/site/ProductsBrowser";
 import { getProducts, getBodyTypes } from "@/data/db";
 
 export const metadata: Metadata = {
-  title: "Suzuki Car Prices in Pakistan, All New Models",
+  title: "Car Prices in Pakistan, All New Models",
   description:
-    "Compare all new Suzuki car prices in Pakistan: Fronx, Swift, Cultus, Alto and Every. Official variants, specs and starting prices at Central Motors, authorised Suzuki dealer in Rawalpindi.",
-  keywords: ["Suzuki car prices Pakistan", "new Suzuki models", "Suzuki Fronx price", "Suzuki Swift price", "Suzuki Alto price", "Suzuki Cultus price"],
+    "Compare all new car prices in Pakistan: Fronx, Swift, Cultus, Alto and Every. Official variants, specs and starting prices at Central Motors, authorised dealership in Rawalpindi.",
+  keywords: ["Suzuki car prices Pakistan", "new vehicle models", "Fronx price", "Swift price", "Alto price", "Cultus price"],
   alternates: { canonical: "/products" },
 };
 
@@ -19,8 +19,8 @@ export default async function ProductsPage() {
     <>
       <PageHero
         eyebrow="Our lineup"
-        title="All Suzuki models"
-        subtitle="The current Suzuki passenger lineup. Prices shown are starting figures."
+        title="All vehicle models"
+        subtitle="The current passenger lineup. Prices shown are starting figures."
       />
       <div className="pt-10">
         <ProductsBrowser products={products} types={types} />

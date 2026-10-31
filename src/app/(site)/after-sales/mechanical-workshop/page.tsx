@@ -5,7 +5,7 @@ import { workshopServices } from "@/data";
 export const metadata: Metadata = {
   title: "Mechanical Workshop",
   description:
-    "Our authorised Suzuki mechanical workshop in Rawalpindi, serving Islamabad, scheduled maintenance, engine diagnostics, AC, brakes, electrical and more, by certified technicians using genuine parts.",
+    "Our authorised mechanical workshop in Rawalpindi, serving Islamabad, scheduled maintenance, engine diagnostics, AC, brakes, electrical and more, by certified technicians using genuine parts.",
   keywords: ["Suzuki workshop Rawalpindi", "Suzuki mechanic Islamabad", "Suzuki service center", "Suzuki maintenance Pakistan"],
   alternates: { canonical: "/after-sales/mechanical-workshop" },
 };
@@ -19,7 +19,7 @@ const SECTIONS = [
 const STATS = [
   { num: "42+", label: "Years serving Rawalpindi" },
   { num: "7S", label: "Complete dealership facility" },
-  { num: "100%", label: "Genuine Suzuki parts" },
+  { num: "100%", label: "Genuine OEM parts" },
   { num: "1000s", label: "Cars serviced" },
 ];
 
@@ -38,7 +38,7 @@ export default function MechanicalWorkshopPage() {
       callPhone="0315-8709631"
       stats={STATS}
       servicesHeading="Our complete workshop services"
-      servicesIntro="Everything your Suzuki needs under one roof, carried out by certified technicians using genuine Suzuki parts and ECSTAR oils."
+      servicesIntro="Everything your Suzuki needs under one roof, carried out by certified technicians using genuine OEM parts and ECSTAR oils."
       services={workshopServices}
       sections={SECTIONS}
       closing="Whether it's a routine service or a complex repair, our workshop treats every Suzuki with the same care, and hands it back running exactly as it should."

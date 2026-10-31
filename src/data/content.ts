@@ -11,13 +11,13 @@ export const fronxHero = [
     kicker: "New at Central Motors",
     lead: "THE COMPACT SUV,",
     big: "REIMAGINED",
-    sub: "Coupe-inspired lines, a bold new face and genuine SUV confidence, the Suzuki Fronx brings a fresh shape to Rawalpindi's roads.",
+    sub: "Coupe-inspired lines, a bold new face and genuine SUV confidence, the Fronx brings a fresh shape to Rawalpindi's roads.",
     imageIndex: 0,
     tone: "warm",
   },
   {
     slug: "fronx",
-    kicker: "Suzuki Fronx",
+    kicker: "Central Motors",
     lead: "ENGINEERED TO",
     big: "IMPRESS",
     sub: "Cruise control, wireless charging and a reversing camera, wrapped in a cabin that feels a clear class above.",
@@ -26,7 +26,7 @@ export const fronxHero = [
   },
   {
     slug: "fronx",
-    kicker: "Suzuki Fronx",
+    kicker: "Central Motors",
     lead: "COMMAND EVERY",
     big: "ROAD",
     sub: "A confident stance, sculpted shoulders and road presence that turns heads on every corner you take.",
@@ -36,7 +36,7 @@ export const fronxHero = [
 ];
 
 export const heroSlides = [
-  { slug: "fronx", cat: "Automobiles", tagline: "Suzuki's bold new XUV.", specs: ["SUV", "Cruise Control", "Wireless Charger"] },
+  { slug: "fronx", cat: "Automobiles", tagline: "Bold new XUV.", specs: ["SUV", "Cruise Control", "Wireless Charger"] },
   { slug: "swift", cat: "Automobiles", tagline: "Sporty styling, premium hatchback.", specs: ["Six Airbags", "ABS with EBD", "Push Start"] },
   { slug: "cultus", cat: "Automobiles", tagline: "Practical, efficient, everyday.", specs: ["Alloy Wheels", "ABS", "Dual Airbags"] },
   { slug: "alto", cat: "Automobiles", tagline: "The economical city hatchback.", specs: ["Power Steering", "ABS", "Airbags"] },
@@ -44,7 +44,7 @@ export const heroSlides = [
 ];
 
 export const homeStats = [
-  { num: "6", label: "Current Suzuki models" },
+  { num: "6", label: "Current vehicle models" },
   { num: "7S", label: "Complete dealership facility" },
   { num: "42+", label: "Years serving Rawalpindi" },
 ];
@@ -53,22 +53,22 @@ export const valueProps = [
   {
     icon: "certified",
     title: "Certified Used Cars",
-    body: "Inspected, reconditioned pre-owned Suzukis with a warranty.",
-    detail: "Every pre-owned Suzuki we sell is multi-point inspected, reconditioned by our technicians and handed over with a warranty, peace of mind at a pre-owned price.",
-    points: ["Multi-point inspection", "Reconditioned by Suzuki technicians", "Backed by a warranty"],
+    body: "Inspected, reconditioned pre-owned vehicles with a warranty.",
+    detail: "Every pre-owned vehicle we sell is multi-point inspected, reconditioned by our technicians and handed over with a warranty, peace of mind at a pre-owned price.",
+    points: ["Multi-point inspection", "Reconditioned by certified technicians", "Backed by a warranty"],
   },
   {
     icon: "exchange",
     title: "Exchange Offer",
     body: "Trade in your old car against any new model, instant valuation.",
-    detail: "Trade your current car against any new Suzuki. We give a fair, on-the-spot valuation and handle the ownership transfer and paperwork end-to-end.",
+    detail: "Trade your current car against any new model. We give a fair, on-the-spot valuation and handle the ownership transfer and paperwork end-to-end.",
     points: ["Free on-the-spot valuation", "Value adjusted against any model", "Transfer & paperwork handled"],
   },
   {
     icon: "parts",
     title: "Genuine Parts",
-    body: "100% authentic Suzuki spare parts and service kits.",
-    detail: "100% authentic Suzuki parts and service kits straight from our parts counter, the right fit and the right quality, every time.",
+    body: "100% authentic spare parts and service kits.",
+    detail: "100% authentic parts and service kits straight from our parts counter, the right fit and the right quality, every time.",
     points: ["100% genuine parts", "Engine, body & service kits", "Fast over-the-counter access"],
   },
   {
@@ -81,7 +81,7 @@ export const valueProps = [
   {
     icon: "warranty",
     title: "Extended Warranty",
-    body: "Protect your Suzuki beyond the standard cover.",
+    body: "Protect your vehicle beyond the standard cover.",
     detail: "Extend cover beyond the standard 3 years / 60,000 km with a plan tailored to how you actually use your car, serviced and honoured at our authorised 7S workshop.",
     points: ["Beyond 3 yrs / 60,000 km", "Plans to suit your usage", "Honoured at our 7S workshop"],
   },
@@ -96,7 +96,7 @@ export const valueProps = [
     icon: "bodyshop",
     title: "Body Shop",
     body: "Expert denting, painting and accident repair.",
-    detail: "Professional denting, painting and accident repair carried out in a colour-matched paint booth so your Suzuki leaves looking like new.",
+    detail: "Professional denting, painting and accident repair carried out in a colour-matched paint booth so your vehicle leaves looking like new.",
     points: ["Denting & painting", "Accident repair", "Colour-matched paint booth"],
   },
   {
@@ -113,19 +113,19 @@ export const afterSales = [
   {
     icon: "workshop",
     title: "Mechanical Workshop",
-    body: "From free running-in inspections to full engine diagnostics, our trained technicians keep your Suzuki performing like new, using genuine parts and factory-grade tools.",
+    body: "From free running-in inspections to full engine diagnostics, our trained technicians keep your vehicle performing like new, using genuine parts and factory-grade tools.",
     href: "/after-sales/mechanical-workshop",
   },
   {
     icon: "bodyshop",
     title: "Paint & Body Shop",
-    body: "From dents and scratches to collision damage, our colour-matched paint booth and structural repair bay restore your Suzuki to its original factory finish and safety.",
+    body: "From dents and scratches to collision damage, our colour-matched paint booth and structural repair bay restore your vehicle to its original factory finish and safety.",
     href: "/after-sales/paint-body-shop",
   },
   {
     icon: "parts",
-    title: "Suzuki Genuine Parts",
-    body: "100% authentic Suzuki Genuine Parts, Accessories and ECSTAR oils. The right fit and the right quality, straight from our parts counter.",
+    title: "Genuine Parts",
+    body: "100% authentic Genuine Parts, Accessories and ECSTAR oils. The right fit and the right quality, straight from our parts counter.",
     href: "/genuine-parts",
   },
   {
@@ -159,7 +159,7 @@ export const bodyShopServices = [
 ];
 
 export const aboutStats = [
-  { num: "6", label: "Suzuki models" },
+  { num: "6", label: "Vehicle models" },
   { num: "42+", label: "Years in business" },
   { num: "7S", label: "Complete dealership facility" },
   { num: "1000s", label: "Happy customers" },
@@ -169,7 +169,7 @@ export const serviceSections = [
   {
     icon: "exchange",
     title: "Exchange Offer",
-    body: "Trade in your current car against any new Suzuki. Our team gives you a fair, transparent valuation on the spot and handles the paperwork end-to-end.",
+    body: "Trade in your current car against any new model. Our team gives you a fair, transparent valuation on the spot and handles the paperwork end-to-end.",
     highlights: [
       "Free, transparent valuation on the spot",
       "Adjust your old car's value against any new model",
@@ -180,10 +180,10 @@ export const serviceSections = [
   {
     icon: "certified",
     title: "Certified Used Cars",
-    body: "Every pre-owned Suzuki we sell is multi-point inspected, reconditioned and backed by a warranty, peace of mind at a pre-owned price.",
+    body: "Every pre-owned vehicle we sell is multi-point inspected, reconditioned and backed by a warranty, peace of mind at a pre-owned price.",
     highlights: [
       "Multi-point mechanical and body inspection",
-      "Reconditioned by trained Suzuki technicians",
+      "Reconditioned by trained certified technicians",
       "Backed by a warranty for genuine peace of mind",
     ],
     cta: { href: "/online-inquiry", label: "Enquire about stock" },
@@ -213,10 +213,10 @@ export const serviceSections = [
 ];
 
 export const facilities = [
-  { icon: "workshop", mark: "7S", title: "7S Workshop", body: "A modern Sales, Service & Spare-parts facility with trained Suzuki technicians." },
+  { icon: "workshop", mark: "7S", title: "7S Workshop", body: "A modern Sales, Service & Spare-parts facility with trained certified technicians." },
   { icon: "bodyshop", mark: "BS", title: "Body Shop", body: "Professional denting, painting and accident repair with a colour-matched paint booth." },
   { icon: "diagnostics", mark: "DG", title: "Computerised Diagnostics", body: "Factory-grade diagnostic tools for accurate, first-time fault finding." },
-  { icon: "parts", mark: "GP", title: "Genuine Parts Counter", body: "Fast over-the-counter access to 100% authentic Suzuki spare parts." },
+  { icon: "parts", mark: "GP", title: "Genuine Parts Counter", body: "Fast over-the-counter access to 100% authentic spare parts." },
   { icon: "quality", mark: "QC", title: "Quality Control", body: "Multi-point checks before every vehicle leaves the workshop." },
   { icon: "care", mark: "CC", title: "Customer Care Desk", body: "A dedicated desk to log, track and resolve every customer concern." },
 ];
@@ -230,10 +230,10 @@ export const warrantyRows = [
 ];
 
 export const genuineCards = [
-  { mark: "EP", title: "Engine Parts", body: "Filters, belts, plugs and components engineered to exact Suzuki specifications." },
+  { mark: "EP", title: "Engine Parts", body: "Filters, belts, plugs and components engineered to exact vehicle specifications." },
   { mark: "BP", title: "Body Parts", body: "Panels, bumpers and lights that fit precisely and preserve your vehicle's value." },
   { mark: "SK", title: "Service Kits", body: "Complete maintenance kits for scheduled services, everything in one box." },
-  { mark: "AC", title: "Accessories", body: "Genuine Suzuki accessories to personalise and protect your vehicle." },
+  { mark: "AC", title: "Accessories", body: "Genuine accessories to personalise and protect your vehicle." },
   { mark: "WR", title: "Parts Warranty", body: "Selected genuine parts carry a 6-month over-the-counter warranty." },
   { mark: "AV", title: "Availability", body: "A well-stocked counter and fast ordering for anything not in stock." },
 ];
@@ -260,10 +260,10 @@ export const ceo = {
   role: "Chief Executive Officer",
   initials: "SA",
   message:
-    "Our promise is simple, treat every customer the way we'd want to be treated. From the moment you step into our showroom to every service visit thereafter, our team works to earn your trust and keep your Suzuki running at its best.",
+    "Our promise is simple, treat every customer the way we'd want to be treated. From the moment you step into our showroom to every service visit thereafter, our team works to earn your trust and keep your vehicle running at its best.",
 };
 
 export const mission =
-  "To deliver an honest, hassle-free ownership experience, pairing the right Suzuki with every customer and supporting it with dependable after-sales care.";
+  "To deliver an honest, hassle-free ownership experience, pairing the right vehicle with every customer and supporting it with dependable after-sales care.";
 export const vision =
-  "To be the most trusted Suzuki dealership in the region, known for integrity, service quality and genuine long-term relationships.";
+  "To be the most trusted automotive dealership in the region, known for integrity, service quality and genuine long-term relationships.";

@@ -18,13 +18,13 @@ export async function generateMetadata({ params }: { params: { slug: string } })
   if (!p) return { title: "Model not found" };
   const year = new Date().getFullYear();
   const title = `Suzuki ${p.name} ${year} Price in Pakistan, Specs & Variants`;
-  const description = `Suzuki ${p.name} price in Pakistan starts at ${formatPKR(p.startPrice)}. Compare ${p.variants.length > 1 ? `all ${p.variants.length} variants, ` : ""}specs, colours and features, and book a test drive at Central Motors Rawalpindi, an authorised Suzuki dealer.`;
+  const description = `Suzuki ${p.name} price in Pakistan starts at ${formatPKR(p.startPrice)}. Compare ${p.variants.length > 1 ? `all ${p.variants.length} variants, ` : ""}specs, colours and features, and book a test drive at Central Motors Rawalpindi, an authorised dealership.`;
   return {
     title,
     description,
     keywords: [
-      `Suzuki ${p.name}`, `Suzuki ${p.name} price in Pakistan`, `Suzuki ${p.name} ${year}`,
-      `${p.name} price`, `${p.name} specs`, `${p.name} variants`, "Suzuki cars Pakistan",
+      `Central Motors ${p.name}`, `Suzuki ${p.name} price in Pakistan`, `${p.name} ${year}`,
+      `${p.name} price`, `${p.name} specs`, `${p.name} variants`, "Cars Pakistan",
     ],
     alternates: { canonical: `/product/${p.slug}` },
     openGraph: {
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: { params: { slug: string } })
       title,
       description,
       url: `/product/${p.slug}`,
-      images: p.images?.[0] ? [{ url: p.images[0], alt: `Suzuki ${p.name}` }] : [],
+      images: p.images?.[0] ? [{ url: p.images[0], alt: `Central Motors ${p.name}` }] : [],
     },
     twitter: { card: "summary_large_image", title, images: p.images?.[0] ? [p.images[0]] : [] },
   };
@@ -55,8 +55,8 @@ export default async function ProductPage({ params }: { params: { slug: string }
   const productLd = {
     "@context": "https://schema.org",
     "@type": "Car",
-    name: `Suzuki ${product.name}`,
-    brand: { "@type": "Brand", name: "Suzuki" },
+    name: `${product.name}`,
+    brand: { "@type": "Brand", name: "Central Motors" },
     description: product.desc,
     image: (product.images ?? []).map((i) => `${SITE_URL}${i}`),
     bodyType: product.tag || undefined,
@@ -68,7 +68,7 @@ export default async function ProductPage({ params }: { params: { slug: string }
       highPrice: Math.max(...prices),
       offerCount: product.variants.length,
       availability: product.status === "DISCONTINUED" ? "https://schema.org/Discontinued" : "https://schema.org/InStock",
-      seller: { "@type": "AutoDealer", name: "Suzuki Central Motors" },
+      seller: { "@type": "AutoDealer", name: "Central Motors" },
     },
   };
   const breadcrumbLd = {
@@ -87,27 +87,27 @@ export default async function ProductPage({ params }: { params: { slug: string }
     mainEntity: [
       {
         "@type": "Question",
-        name: `What is the price of Suzuki ${product.name} in Pakistan?`,
+        name: `What is the price of ${product.name} in Pakistan?`,
         acceptedAnswer: {
           "@type": "Answer",
           text:
             product.variants.length > 1
-              ? `The Suzuki ${product.name} price in Pakistan ranges from ${formatPKR(Math.min(...prices))} to ${formatPKR(Math.max(...prices))} across ${product.variants.length} variants (${product.variants.map((v) => v.name).join(", ")}).`
-              : `The Suzuki ${product.name} price in Pakistan is ${formatPKR(product.startPrice)}.`,
+              ? `The ${product.name} price in Pakistan ranges from ${formatPKR(Math.min(...prices))} to ${formatPKR(Math.max(...prices))} across ${product.variants.length} variants (${product.variants.map((v) => v.name).join(", ")}).`
+              : `The ${product.name} price in Pakistan is ${formatPKR(product.startPrice)}.`,
         },
       },
       {
         "@type": "Question",
-        name: `Where can I buy the Suzuki ${product.name} in Rawalpindi or Islamabad?`,
+        name: `Where can I buy the ${product.name} in Rawalpindi or Islamabad?`,
         acceptedAnswer: {
           "@type": "Answer",
-          text: `You can buy the Suzuki ${product.name} at Suzuki Central Motors, an authorised 7S Suzuki dealership on G.T. Road, Rawalpindi, with test drives, financing guidance, genuine parts and after-sales service.`,
+          text: `You can buy the ${product.name} at Central Motors, an authorised 7S dealership on G.T. Road, Rawalpindi, with test drives, financing guidance, genuine parts and after-sales service.`,
         },
       },
       ...(product.specs?.tax
         ? [{
             "@type": "Question",
-            name: `How much is the registration tax on the Suzuki ${product.name}?`,
+            name: `How much is the registration tax on the ${product.name}?`,
             acceptedAnswer: {
               "@type": "Answer",
               text: `Advance income tax at registration is ${formatPKR(product.specs.tax.filer)} for tax filers and ${formatPKR(product.specs.tax.nonFiler)} for non-filers, on top of the vehicle price.`,
@@ -221,7 +221,7 @@ export default async function ProductPage({ params }: { params: { slug: string }
               product.specs?.announcement?.phrases?.length
                 ? product.specs.announcement.phrases
                 : [
-                    `Suzuki ${product.name}`,
+                    `${product.name}`,
                     product.tag ? `The ${product.tag}, redefined` : "Built for every road",
                     "Bold by design",
                     `Starting at ${formatPKR(product.startPrice)}`,

@@ -7,9 +7,9 @@ import Reveal from "@/components/site/Reveal";
 import { telHref } from "@/lib/utils";
 
 export const metadata: Metadata = {
-  title: "Suzuki Genuine Parts",
+  title: "Genuine Parts",
   description:
-    "100% authentic Suzuki Genuine Parts, Accessories and ECSTAR oils. Engineered to fit, built to last, and available straight from our parts counter, serving Rawalpindi and Islamabad.",
+    "100% authentic Genuine Parts, Accessories and ECSTAR oils. Engineered to fit, built to last, and available straight from our parts counter, serving Rawalpindi and Islamabad.",
   keywords: ["Suzuki genuine parts Pakistan", "Suzuki parts Rawalpindi", "Suzuki parts Islamabad", "ECSTAR oil Suzuki", "Suzuki accessories"],
   alternates: { canonical: "/genuine-parts" },
 };
@@ -17,20 +17,20 @@ export const metadata: Metadata = {
 const PARTS_PHONE = "+92 308 2010254";
 
 const BADGES = [
-  { src: "/brand/suzuki-genuine-parts.png", alt: "Suzuki Genuine Parts", w: 984, h: 337 },
-  { src: "/brand/suzuki-genuine-accessories.png", alt: "Suzuki Genuine Accessories", w: 966, h: 336 },
-  { src: "/brand/ecstar.png", alt: "Suzuki ECSTAR", w: 788, h: 350 },
+  { src: "/brand/suzuki-genuine-parts.png", alt: "Genuine Parts", w: 984, h: 337 },
+  { src: "/brand/suzuki-genuine-accessories.png", alt: "Genuine Accessories", w: 966, h: 336 },
+  { src: "/brand/ecstar.png", alt: "Certified Oils & Fluids", w: 788, h: 350 },
 ];
 
 const WHY = [
   { icon: "quality", title: "Engineered to fit", body: "Made to the exact factory specification for your model, so every part fits first time." },
-  { icon: "certified", title: "Safety & performance", body: "Tested to strict Suzuki standards to keep your car performing exactly as intended." },
+  { icon: "certified", title: "Safety & performance", body: "Tested to strict manufacturer standards to keep your car performing exactly as intended." },
   { icon: "warranty", title: "Protects your warranty", body: "Fitting genuine parts keeps your manufacturer warranty valid and intact." },
   { icon: "finance", title: "Holds resale value", body: "A genuine-parts service history reassures buyers and protects what your car is worth." },
 ];
 
 const CATEGORIES = [
-  { icon: "diagnostics", title: "Engine Parts", body: "Filters, belts, plugs and components built to precise Suzuki specifications." },
+  { icon: "diagnostics", title: "Engine Parts", body: "Filters, belts, plugs and components built to precise manufacturer specifications." },
   { icon: "bodyshop", title: "Body Parts", body: "Panels, bumpers and lights that fit precisely and preserve your vehicle's value." },
   { icon: "parts", title: "Service Kits", body: "Complete maintenance kits for scheduled services, everything in one box." },
   { icon: "care", title: "Accessories", body: "Genuine Suzuki accessories to personalise and protect your vehicle." },
@@ -38,19 +38,19 @@ const CATEGORIES = [
   { icon: "roadside", title: "Fast Availability", body: "A well-stocked counter with quick ordering for anything not in stock." },
 ];
 
-const GENUINE = ["Exact factory fit, every time", "Tested to Suzuki quality standards", "Keeps your warranty valid", "Backed by a genuine parts warranty", "Protects your resale value"];
+const GENUINE = ["Exact factory fit, every time", "Tested to certified quality standards", "Keeps your warranty valid", "Backed by a genuine parts warranty", "Protects your resale value"];
 const IMITATION = ["Approximate, inconsistent fit", "Unverified materials and quality", "Can void your warranty", "No guarantee and no recourse", "Lowers your resale value"];
 
 export default function GenuinePartsPage() {
   return (
     <>
-      <PageHero eyebrow="100% Authentic" title="Suzuki Genuine Parts" subtitle="Engineered to fit, built to last. Insist on genuine Suzuki parts to protect your warranty, safety and resale value." />
+      <PageHero eyebrow="100% Authentic" title="Genuine Parts" subtitle="Engineered to fit, built to last. Insist on genuine OEM parts to protect your warranty, safety and resale value." />
 
       {/* authorised programme logos */}
       <section className="border-b border-line bg-paper">
         <div className="container-site flex flex-col items-center gap-5 py-7 sm:flex-row sm:justify-between">
           <p className="text-center text-[14px] font-medium text-ink-muted sm:text-left">
-            An <span className="font-bold text-ink">authorised</span> source for Suzuki Genuine Parts, Accessories &amp; ECSTAR oils.
+            An <span className="font-bold text-ink">authorised</span> source for Genuine Parts, Accessories &amp; ECSTAR oils.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-9 gap-y-4">
             {BADGES.map((b) => (
@@ -66,7 +66,7 @@ export default function GenuinePartsPage() {
           <div className="eyebrow">Why genuine</div>
           <h2 className="section-title mt-2.5">A copy is never a match</h2>
           <p className="mt-3 leading-relaxed text-ink-muted">
-            Imitation parts can look the same and cost less, but the difference shows in fit, safety and how long they last. Genuine Suzuki parts are made for your car and nothing else.
+            Imitation parts can look the same and cost less, but the difference shows in fit, safety and how long they last. Genuine OEM parts are made for your car and nothing else.
           </p>
         </div>
         <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4">
@@ -95,7 +95,7 @@ export default function GenuinePartsPage() {
         <h2 className="section-title">Genuine vs imitation</h2>
         <div className="mt-6 grid grid-cols-1 gap-4 lg:grid-cols-2">
           <div className="overflow-hidden rounded-2xl border-2 border-suzuki-red/25 bg-white shadow-card">
-            <div className="flex items-center gap-2 bg-suzuki-red px-6 py-4 font-display text-[15px] font-extrabold text-white">Suzuki Genuine Parts</div>
+            <div className="flex items-center gap-2 bg-suzuki-red px-6 py-4 font-display text-[15px] font-extrabold text-white">Genuine Parts</div>
             <ul className="space-y-3 p-6">
               {GENUINE.map((g) => (
                 <li key={g} className="flex items-start gap-3 text-[14px] text-ink-soft">

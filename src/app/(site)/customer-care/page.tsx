@@ -11,7 +11,7 @@ import { getSettings } from "@/data/db";
 export const metadata: Metadata = {
   title: "Customer Care",
   description: "A modern 7S Suzuki workshop, genuine parts and a dedicated care desk in Rawalpindi, serving Islamabad too, we keep your Suzuki at its best.",
-  keywords: ["Suzuki customer care Rawalpindi", "Suzuki customer care Islamabad", "Suzuki workshop Rawalpindi", "Suzuki service Islamabad"],
+  keywords: ["Suzuki customer care Rawalpindi", "Suzuki customer care Islamabad", "Suzuki workshop Rawalpindi", "Car service Islamabad"],
   alternates: { canonical: "/customer-care" },
 };
 

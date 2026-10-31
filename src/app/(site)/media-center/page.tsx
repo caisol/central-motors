@@ -5,7 +5,7 @@ import { albums } from "@/data";
 
 export const metadata: Metadata = {
   title: "Media Center",
-  description: "Moments from our Suzuki showroom, workshop, campaigns and customer events in Rawalpindi and Islamabad.",
+  description: "Moments from our showroom, workshop, campaigns and customer events in Rawalpindi and Islamabad.",
   alternates: { canonical: "/media-center" },
 };
 

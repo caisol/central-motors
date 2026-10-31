@@ -6,7 +6,7 @@ import { telHref } from "@/lib/utils";
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
-    "How Suzuki Central Motors collects, uses, and protects the personal information you submit through our website forms.",
+    "How Central Motors collects, uses, and protects the personal information you submit through our website forms.",
   alternates: { canonical: "/privacy" },
 };
 
@@ -29,7 +29,7 @@ export default async function PrivacyPage() {
 
           <Block title="1. Who we are">
             <p>
-              {settings.siteName} (&ldquo;we&rdquo;, &ldquo;us&rdquo;) is an authorised 7S Suzuki
+              {settings.siteName} (&ldquo;we&rdquo;, &ldquo;us&rdquo;) is an authorised 7S
               dealership in Rawalpindi, Pakistan. We are responsible for the personal information
               you provide through this website. Our address is {settings.address}.
             </p>
@@ -71,7 +71,7 @@ export default async function PrivacyPage() {
           <Block title="5. Who we share it with">
             <p>
               Your submission is delivered to our internal sales and service staff and to
-              Pak Suzuki Motor Company where required to process a booking, warranty, or service
+              Authorised partner manufacturers where required to process a booking, warranty, or service
               claim. We use a reputable email provider to deliver these notifications. We never
               share your information with unrelated third parties for their own marketing.
             </p>

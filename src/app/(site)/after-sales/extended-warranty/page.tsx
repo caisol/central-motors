@@ -44,7 +44,7 @@ export default function ExtendedWarrantyPage() {
           <p className="max-w-[600px] text-[15.5px] leading-relaxed text-ink-muted">
             Your Suzuki arrives with a solid factory warranty. An extended plan simply carries that
             peace of mind further. Cover stays with the car, claims are handled at our own workshop,
-            and every repair uses genuine Suzuki parts.
+            and every repair uses genuine OEM parts.
           </p>
         </Reveal>
         <Reveal delay={80}>

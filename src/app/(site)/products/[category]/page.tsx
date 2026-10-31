@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: { params: { category: string 
   return {
     title: `Suzuki ${c.name} Price in Pakistan`,
     description: c.blurb,
-    keywords: [`Suzuki ${c.name}`, `Suzuki ${c.name} price Pakistan`, "Suzuki Rawalpindi", "Suzuki Islamabad"],
+    keywords: [`${c.name}`, `Suzuki ${c.name} price Pakistan`, "Suzuki Rawalpindi", "Suzuki Islamabad"],
     alternates: { canonical: `/products/${c.slug}` },
   };
 }

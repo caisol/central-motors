@@ -16,13 +16,13 @@ import { t, langClass } from "@/lib/i18n";
 export const dynamic = "force-dynamic";
 
 export const metadata: Metadata = {
-  title: { absolute: "Suzuki Central Motors | Suzuki Cars, Prices, Rawalpindi & Islamabad" },
+  title: { absolute: "Central Motors | Cars, Prices, Rawalpindi & Islamabad" },
   description:
-    "Suzuki Central Motors, an authorised 7S Suzuki Motor Company dealership serving Rawalpindi and Islamabad. Buy Suzuki Fronx, Swift, Cultus, Alto and Every at official prices, book test drives, workshop service, genuine parts and warranty.",
+    "Central Motors, a premier 7S dealership serving Rawalpindi and Islamabad. Explore Fronx, Swift, Cultus, Alto and Every at official prices, book test drives, workshop service, genuine parts and warranty.",
   keywords: [
-    "Suzuki", "Suzuki Pakistan", "Suzuki Motor", "Suzuki Motors", "Suzuki Motor Company",
-    "Suzuki Fronx", "Suzuki Fronx price in Pakistan", "Suzuki dealer Rawalpindi", "Suzuki dealer Islamabad",
-    "Suzuki Islamabad", "Suzuki showroom Rawalpindi", "Suzuki showroom Islamabad", "Suzuki Central Motors",
+    "Central Motors", "car dealership Rawalpindi", "cars Islamabad", "dealership Rawalpindi",
+    "Fronx", "Fronx price in Pakistan", "car showroom Rawalpindi", "car showroom Islamabad",
+    "workshop Rawalpindi", "genuine car parts", "car service Rawalpindi",
   ],
   alternates: { canonical: "/" },
 };
@@ -49,7 +49,7 @@ export default async function Home() {
   // Lineup order is managed from the admin panel (Products → Order arrows).
   const [featured, news, allModels] = await Promise.all([getFeaturedProducts(8), getNewsPaged(1, 6), getProducts()]);
   // Keep the models stat honest, it follows whatever is published in the admin panel.
-  const stats = homeStats.map((s) => (s.label === "Current Suzuki models" ? { ...s, num: String(allModels.length) } : s));
+  const stats = homeStats.map((s) => (s.label === "Current vehicle models" || s.label === "Available models" ? { ...s, num: String(allModels.length) } : s));
 
   return (
     <>

@@ -66,7 +66,7 @@ export default function Footer({ settings, lang = "en" }: { settings: Settings; 
         aria-hidden
         className="pointer-events-none absolute inset-x-0 bottom-10 select-none overflow-hidden text-center font-display text-[clamp(90px,17vw,240px)] font-black uppercase leading-none tracking-tight text-transparent [-webkit-text-stroke:1px_rgba(255,255,255,.05)]"
       >
-        SUZUKI
+        CENTRAL MOTORS
       </div>
 
       {/* CTA strip */}
@@ -90,7 +90,7 @@ export default function Footer({ settings, lang = "en" }: { settings: Settings; 
       {/* columns */}
       <div className="container-site relative grid grid-cols-2 gap-8 pt-12 text-center lg:grid-cols-[1.4fr_1fr_1fr_1.35fr] lg:gap-9 lg:text-left">
         <div className="col-span-2 lg:col-span-1">
-          <Image src="/brand/suzuki-wordmark-white.png" alt={settings.siteName} width={1912} height={556} sizes="200px" className="mx-auto h-11 w-auto lg:mx-0" />
+          <Image src="/brand/central-motors-wordmark-white.png" alt={settings.siteName} width={1912} height={556} sizes="200px" className="mx-auto h-11 w-auto lg:mx-0" />
           <p className="mx-auto mt-4 max-w-[300px] text-[13.5px] leading-relaxed text-[#90A6C9] lg:mx-0 lg:max-w-[280px]">
             {settings.tagline}. New cars, service, genuine parts and body shop, all under one roof.
           </p>

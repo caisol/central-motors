@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import type { Metadata } from "next";
 import Image from "next/image";
 import { Suspense } from "react";
@@ -24,7 +25,7 @@ export default async function AdminLoginPage() {
         aria-hidden
         className="pointer-events-none absolute inset-x-0 bottom-6 select-none overflow-hidden text-center font-display text-[clamp(80px,16vw,220px)] font-black uppercase leading-none tracking-tight text-transparent [-webkit-text-stroke:1px_rgba(255,255,255,.05)]"
       >
-        SUZUKI
+        CENTRAL MOTORS
       </div>
 
       {/* card */}
@@ -42,9 +43,9 @@ export default async function AdminLoginPage() {
           </div>
 
           <div className="relative flex items-center gap-3.5">
-            <Image src="/brand/suzuki-mark.png" alt="Suzuki" width={606} height={606} priority className="h-9 w-auto drop-shadow-[0_4px_10px_rgba(0,0,0,.35)] sm:h-11" />
+            <Image src="/brand/central-motors-mark.png" alt="Central Motors" width={606} height={606} priority className="h-9 w-auto drop-shadow-[0_4px_10px_rgba(0,0,0,.35)] sm:h-11" />
             <div>
-              <div className="font-display text-[14.5px] font-extrabold leading-tight sm:text-[15.5px]">Suzuki Central Motors</div>
+              <div className="font-display text-[14.5px] font-extrabold leading-tight sm:text-[15.5px]">Central Motors</div>
               <div className="mt-0.5 whitespace-nowrap text-[9.5px] font-bold uppercase tracking-[0.14em] text-[#8FA7CC] sm:text-[10.5px] sm:tracking-[0.18em]">Dealer Management Portal</div>
             </div>
           </div>
@@ -76,7 +77,7 @@ export default async function AdminLoginPage() {
             </Suspense>
           </div>
           <p className="mt-6 text-center text-[11px] leading-relaxed text-ink-faint sm:mt-8 sm:text-[12px]">
-            Authorised personnel only · Suzuki Central Motors, Rawalpindi
+            Authorised personnel only · Central Motors, Rawalpindi
           </p>
         </main>
       </div>

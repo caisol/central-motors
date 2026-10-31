@@ -1,11 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import type { Metadata } from "next";
 
-export const metadata: Metadata = {
-  title: "Page not found",
-  robots: { index: false, follow: false },
-};
 
 /* Global 404 fallback (for routes outside the public-site group). Self-contained
  * so it doesn't depend on the site header/footer. */
@@ -14,8 +9,8 @@ export default function NotFound() {
     <main className="flex min-h-screen flex-col bg-paper">
       <header className="border-b border-line bg-white">
         <div className="container-site flex h-[72px] items-center">
-          <Link href="/" aria-label="Suzuki Central Motors home" className="flex items-center">
-            <Image src="/brand/suzuki-wordmark.png" alt="Suzuki Central Motors" width={1912} height={556} priority className="h-10 w-auto" />
+          <Link href="/" aria-label="Central Motors home" className="flex items-center">
+            <Image src="/brand/suzuki-wordmark.png" alt="Central Motors" width={1912} height={556} priority className="h-10 w-auto" />
           </Link>
         </div>
       </header>
@@ -40,7 +35,7 @@ export default function NotFound() {
               href="/products"
               className="rounded-full border border-line bg-white px-6 py-3.5 text-sm font-bold text-suzuki-dark transition hover:border-suzuki-blue hover:text-suzuki-blue"
             >
-              Browse Suzuki models
+              Browse all models
             </Link>
             <Link
               href="/contact"

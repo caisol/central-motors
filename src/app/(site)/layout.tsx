@@ -8,7 +8,15 @@ import { getLang } from "@/lib/lang";
 // Live settings drive the header/footer, so render dynamically.
 export const dynamic = "force-dynamic";
 
-const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://centralmotors.com.pk").replace(/\/$/, "");
+function getSiteUrl(): string {
+  let raw = process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL || "https://centralmotors.com.pk";
+  if (!raw.startsWith("http://") && !raw.startsWith("https://")) {
+    raw = `https://${raw}`;
+  }
+  return raw.replace(/\/$/, "");
+}
+
+const SITE_URL = getSiteUrl();
 
 /* Public-site chrome (header + footer). The admin panel deliberately sits
  * outside this group so it doesn't inherit the marketing nav. */
@@ -24,7 +32,7 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
     name: settings.siteName,
     description: settings.tagline,
     url: SITE_URL,
-    logo: `${SITE_URL}/brand/suzuki-wordmark.png`,
+    logo: `${SITE_URL}/brand/central-motors-wordmark.png`,
     telephone: settings.uan,
     email: settings.email,
     address: {
@@ -40,7 +48,7 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
       opens: "09:00",
       closes: "18:00",
     },
-    brand: { "@type": "Brand", name: "Suzuki" },
+    brand: { "@type": "Brand", name: settings.siteName },
     areaServed: [
       { "@type": "City", name: "Rawalpindi" },
       { "@type": "City", name: "Islamabad" },

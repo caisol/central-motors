@@ -1,3 +1,4 @@
+export const dynamic = "force-dynamic";
 import type { Metadata } from "next";
 import AuthScreen from "@/components/admin/AuthScreen";
 import ForgotPasswordForm from "@/components/admin/ForgotPasswordForm";

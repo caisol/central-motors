@@ -5,9 +5,9 @@ import { SERVICE_ICONS } from "./ServiceIcons";
 type Item = { icon: string; title: string; body: string; href: string };
 
 const BADGES = [
-  { src: "/brand/suzuki-genuine-parts.png", alt: "Suzuki Genuine Parts", w: 984, h: 337 },
-  { src: "/brand/suzuki-genuine-accessories.png", alt: "Suzuki Genuine Accessories", w: 966, h: 336 },
-  { src: "/brand/ecstar.png", alt: "Suzuki ECSTAR", w: 788, h: 350 },
+  { src: "/brand/suzuki-genuine-parts.png", alt: "Genuine Parts", w: 984, h: 337 },
+  { src: "/brand/suzuki-genuine-accessories.png", alt: "Genuine Accessories", w: 966, h: 336 },
+  { src: "/brand/ecstar.png", alt: "Certified Oils & Fluids", w: 788, h: 350 },
 ];
 
 export default function AfterSales({ items }: { items: Item[] }) {
@@ -35,11 +35,11 @@ export default function AfterSales({ items }: { items: Item[] }) {
         );
       })}
 
-      {/* authorised Suzuki programme badges */}
+      {/* authorised programme badges */}
       <div className="sm:col-span-2 lg:col-span-4">
         <div className="mt-2 flex flex-col items-center gap-6 rounded-2xl border border-line bg-paper px-6 py-6 sm:flex-row sm:justify-between">
           <p className="text-center text-[13.5px] font-medium text-ink-muted sm:text-left">
-            Every service uses <span className="font-bold text-ink">100% authentic</span> Suzuki Genuine Parts, Accessories &amp; ECSTAR oils.
+            Every service uses <span className="font-bold text-ink">100% authentic</span> Genuine Parts, Accessories &amp; Certified Oils.
           </p>
           <div className="flex flex-wrap items-center justify-center gap-x-8 gap-y-4">
             {BADGES.map((b) => (

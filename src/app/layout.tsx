@@ -10,6 +10,7 @@ const display = Archivo({
   variable: "--font-display",
   display: "swap",
 });
+
 const body = Inter({
   subsets: ["latin"],
   weight: ["400", "500", "600", "700"],
@@ -24,23 +25,30 @@ const urdu = Noto_Nastaliq_Urdu({
   display: "swap",
 });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://centralmotors.com.pk";
+function getSiteUrl(): string {
+  let raw = process.env.NEXT_PUBLIC_SITE_URL || process.env.VERCEL_URL || "https://centralmotors.com.pk";
+  if (!raw.startsWith("http://") && !raw.startsWith("https://")) {
+    raw = `https://${raw}`;
+  }
+  return raw.replace(/\/$/, "");
+}
+
+const siteUrl = getSiteUrl();
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
   title: {
-    default: `${settings.siteName} | Suzuki Cars, Prices, Rawalpindi & Islamabad`,
+    default: `${settings.siteName} | Cars, Prices, Rawalpindi & Islamabad`,
     template: `%s | ${settings.siteName}`,
   },
   description:
-    "Suzuki Central Motors, an authorised 7S Suzuki Motor Company dealership serving Rawalpindi and Islamabad. Buy Suzuki Fronx, Swift, Cultus, Alto and Every at official prices, book test drives, workshop service, genuine parts and warranty.",
+    "Central Motors, a premier 7S automotive dealership serving Rawalpindi and Islamabad. Explore Fronx, Swift, Cultus, Alto and Every at official prices, book test drives, workshop service, genuine parts and warranty.",
   keywords: [
-    "Suzuki", "Suzuki Pakistan", "Suzuki Motor", "Suzuki Motors", "Suzuki Motor Company",
-    "Suzuki cars Pakistan", "Suzuki Pakistan price", "Suzuki Fronx", "Suzuki Fronx price in Pakistan",
-    "Suzuki Swift price", "Suzuki Alto price", "Suzuki Cultus price", "Suzuki Every",
-    "Suzuki dealer Rawalpindi", "Suzuki dealer Islamabad", "Suzuki Islamabad", "Suzuki showroom Rawalpindi",
-    "Suzuki showroom Islamabad", "Suzuki service center Rawalpindi", "Suzuki service center Islamabad",
-    "Central Motors", "Suzuki Central Motors", "new Suzuki models Pakistan",
+    "Central Motors", "dealership Rawalpindi", "cars Rawalpindi", "showroom Islamabad",
+    "cars Pakistan", "Pakistan car prices", "Fronx", "Fronx price in Pakistan",
+    "Swift price", "Alto price", "Cultus price", "Every van",
+    "car dealer Rawalpindi", "dealer Islamabad", "car service Rawalpindi",
+    "car service center Islamabad", "genuine auto parts", "new car models Pakistan",
   ],
   applicationName: settings.siteName,
   category: "automotive",
@@ -58,11 +66,16 @@ export const metadata: Metadata = {
     siteName: settings.siteName,
     locale: "en_PK",
     url: siteUrl,
-    title: `${settings.siteName} | Suzuki Cars, Rawalpindi & Islamabad`,
-    description: "Official Suzuki prices in Pakistan: Fronx, Swift, Cultus, Alto and Every. Test drives, service booking and genuine parts, serving Rawalpindi and Islamabad.",
-    images: [{ url: "/brand/suzuki-wordmark.png", width: 1912, height: 556, alt: settings.siteName }],
+    title: `${settings.siteName} | Cars, Rawalpindi & Islamabad`,
+    description: "Official vehicle prices in Pakistan: Fronx, Swift, Cultus, Alto and Every. Test drives, service booking and genuine parts, serving Rawalpindi and Islamabad.",
+    images: [{ url: "/brand/central-motors-wordmark.png", width: 1912, height: 556, alt: settings.siteName }],
   },
-  twitter: { card: "summary_large_image", title: `Suzuki Motors Rawalpindi & Islamabad | ${settings.siteName}` },
+  twitter: {
+    card: "summary_large_image",
+    title: `Central Motors Rawalpindi & Islamabad | ${settings.siteName}`,
+    description: "Official vehicle prices in Pakistan: Fronx, Swift, Cultus, Alto and Every. Test drives, service booking and genuine parts, serving Rawalpindi and Islamabad.",
+    images: [{ url: "/brand/central-motors-wordmark.png", width: 1912, height: 556, alt: settings.siteName }],
+  },
   robots: {
     index: true,
     follow: true,
