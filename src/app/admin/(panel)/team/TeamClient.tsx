@@ -163,7 +163,7 @@ export default function TeamClient({ rows, canEdit, canDelete }: { rows: Row[]; 
             <div className="space-y-4">
               <div>
                 <label className="flabel">Full name</label>
-                <input value={editing.name} onChange={(e) => setEditing((s) => s && { ...s, name: e.target.value })} className="field" placeholder="e.g. Ali Altaf" />
+                <input value={editing.name} onChange={(e) => setEditing((s) => s && { ...s, name: e.target.value })} className="field" placeholder="e.g. Tariq Malik" />
               </div>
               <div>
                 <label className="flabel">Title / designation</label>

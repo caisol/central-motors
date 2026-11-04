@@ -8,6 +8,30 @@ type Seed = Omit<Product, "startPrice" | "images" | "blur" | "brochure">;
 
 const seed: Seed[] = [
   {
+    slug: "apex-sedan", name: "Apex Sedan", category: "automobiles", tag: "Sedan", featured: true, order: 1,
+    desc: "The Apex Sedan is an executive saloon offering refined aerodynamics, spacious cabin luxury, intuitive digital cockpit and responsive performance. Standard with six airbags, ESP, hill-hold control, push-start and dual-zone climate control.",
+    features: ["1.5L Dual VVT Engine", "CVT Automatic with Sport Mode", "8-inch Touchscreen Infotainment", "Dual-Zone Climate Control", "Six Airbags", "Push Start System", "Hill Hold Control", "Smart Keyless Entry"],
+    variants: [{ name: "Executive 1.5 MT", price: 5490000 }, { name: "Prestige 1.5 CVT", price: 5890000 }],
+  },
+  {
+    slug: "vanguard-suv", name: "Vanguard SUV", category: "automobiles", tag: "SUV", featured: true, order: 2,
+    desc: "The Vanguard SUV delivers commanding presence with a spacious 7-seater cabin, intelligent all-wheel-drive capability and panoramic glass roof. Engineered with 360-degree cameras, adaptive cruise control, leather ventilated seats and power tailgate.",
+    features: ["2.0L Turbocharged Engine", "Intelligent AWD System", "Panoramic Sunroof", "360-degree Surround Camera", "Adaptive Cruise Control", "Eight Airbags", "Ventilated Leather Seats", "Power Tailgate"],
+    variants: [{ name: "Elegance 2.0 AWD", price: 7250000 }, { name: "Signature 2.0 AWD", price: 7850000 }],
+  },
+  {
+    slug: "volt-ev", name: "Volt EV", category: "automobiles", tag: "Electric", featured: true, order: 3,
+    desc: "The Volt EV is an all-electric compact crossover offering zero-emission performance, instantaneous electric torque, up to 420 km of driving range, and rapid DC fast charging capability.",
+    features: ["Zero Emission All-Electric Drive", "Up to 420 km Range", "Fast DC Rapid Charging", "Dual 10.25-inch Digital Displays", "Regenerative Braking", "Autonomous Emergency Braking", "Lane Keep Assist", "Keyless Mobile Connect"],
+    variants: [{ name: "Standard Range 50kWh", price: 6800000 }, { name: "Extended Range 65kWh", price: 7400000 }],
+  },
+  {
+    slug: "wagon-r", name: "Wagon-R", category: "automobiles", tag: "Hatchback", featured: false, order: 8,
+    desc: "The Wagon-R is a spacious tall-boy city hatchback renowned for exceptional interior room, high roofline, low fuel consumption and effortless city maneuverability.",
+    features: ["Power Steering", "Air Conditioning", "Anti-Lock Braking (ABS)", "Power Windows", "Keyless Entry", "Central Locking"],
+    variants: [{ name: "VXR", price: 3214000 }, { name: "VXL", price: 3412000 }, { name: "AGS", price: 3741000 }],
+  },
+  {
     slug: "swift", name: "Swift", category: "automobiles", tag: "Hatchback", featured: true, order: 2,
     desc: "The current-generation Swift is a sporty, premium hatchback offered in GLMT, GLVT and GLVVT variants. It features six airbags, ABS with EBD, hill-hold control, push-start and smart keyless entry.",
     features: ["Power Steering", "Air Conditioning", "Alloy Wheels", "Smart Keyless Entry", "ABS with EBD", "Six Airbags", "Hill Hold Control", "Push Start System"],

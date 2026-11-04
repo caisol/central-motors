@@ -256,9 +256,9 @@ export const albums: { title: string; photos: string[] }[] = [
 ];
 
 export const ceo = {
-  name: "Sohail Altaf",
+  name: "Tariq Malik",
   role: "Chief Executive Officer",
-  initials: "SA",
+  initials: "TM",
   message:
     "Our promise is simple, treat every customer the way we'd want to be treated. From the moment you step into our showroom to every service visit thereafter, our team works to earn your trust and keep your vehicle running at its best.",
 };
