@@ -37,9 +37,9 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
     email: settings.email,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Main G.T. Road, Soan Camp, Opposite Toyota Rawal",
+      streetAddress: "123 Demo Boulevard, Sector H-9",
       addressLocality: "Rawalpindi",
-      postalCode: "46000",
+      postalCode: "44000",
       addressCountry: "PK",
     },
     openingHoursSpecification: {
@@ -53,7 +53,7 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
       { "@type": "City", name: "Rawalpindi" },
       { "@type": "City", name: "Islamabad" },
     ],
-    sameAs: [`https://${settings.facebook}`, `https://${settings.instagram}`, `https://${settings.youtube}`],
+    sameAs: [],
   };
 
   return (

@@ -48,9 +48,9 @@ export default function Footer({ settings, lang = "en" }: { settings: Settings; 
   const tr = (k: string) => t(lang, k);
   const lc = langClass(lang);
   const SOCIALS = [
-    { Icon: FacebookIcon, name: "Facebook", url: `https://${settings.facebook}` },
-    { Icon: InstagramIcon, name: "Instagram", url: `https://${settings.instagram}` },
-    { Icon: YouTubeIcon, name: "YouTube", url: `https://${settings.youtube}` },
+    { Icon: FacebookIcon, name: "Facebook", url: "#" },
+    { Icon: InstagramIcon, name: "Instagram", url: "#" },
+    { Icon: YouTubeIcon, name: "YouTube", url: "#" },
   ];
   const mapsUrl = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${settings.siteName}, ${settings.address}`)}`;
 
@@ -100,8 +100,8 @@ export default function Footer({ settings, lang = "en" }: { settings: Settings; 
                 key={s.name}
                 href={s.url}
                 aria-label={s.name}
-                target="_blank"
-                rel="noreferrer"
+                
+                
                 className="grid h-10 w-10 place-items-center rounded-full border border-white/10 bg-white/[.06] text-[#C3D2EA] transition-all duration-300 hover:-translate-y-0.5 hover:border-suzuki-red hover:bg-suzuki-red hover:text-white hover:shadow-cta"
               >
                 <s.Icon />
@@ -120,7 +120,7 @@ export default function Footer({ settings, lang = "en" }: { settings: Settings; 
               <span className="mt-0.5 text-suzuki-sky"><PinIcon /></span>
               <div className="text-[13.5px] leading-relaxed text-[#A9BDDB]">
                 {settings.address}
-                <a href={mapsUrl} target="_blank" rel="noreferrer" className="mt-1 block text-[12.5px] font-bold text-suzuki-sky transition hover:text-white">
+                <a href={mapsUrl}   className="mt-1 block text-[12.5px] font-bold text-suzuki-sky transition hover:text-white">
                   <span className={lc}>{tr("footer.directions")}</span>
                 </a>
               </div>

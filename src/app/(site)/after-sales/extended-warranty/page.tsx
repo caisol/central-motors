@@ -14,7 +14,7 @@ export const metadata: Metadata = {
   alternates: { canonical: "/after-sales/extended-warranty" },
 };
 
-const WARRANTY_PHONE = "051-4917112";
+const WARRANTY_PHONE = "051-0000000";
 
 const BENEFITS = [
   { icon: "warranty", title: "Beyond standard cover", body: "Protection that continues after the manufacturer's 3 years / 60,000 km period ends." },

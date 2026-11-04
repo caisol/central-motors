@@ -70,7 +70,7 @@ export default function ForgotPasswordForm() {
       )}
       <div>
         <label className="flabel" htmlFor="email">Email</label>
-        <input id="email" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="admin@centralmotors.com.pk" className="field" autoComplete="email" />
+        <input id="email" type="email" required value={email} onChange={(e) => setEmail(e.target.value)} placeholder="admin@example.com" className="field" autoComplete="email" />
       </div>
       <button type="submit" disabled={loading} className="flex w-full items-center justify-center gap-2 rounded-[10px] bg-suzuki-red py-3.5 text-sm font-bold text-white shadow-cta transition hover:bg-suzuki-red-dk disabled:opacity-60">
         {loading && <Spinner />}

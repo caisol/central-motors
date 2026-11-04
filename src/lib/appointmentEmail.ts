@@ -12,7 +12,7 @@ import { sendMail, notificationInbox } from "./email";
 
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://centralmotors.com.pk").replace(/\/$/, "");
 const DEALER = "Central Motors";
-const ADDRESS = "Main G.T. Road, Soan Camp, Opposite Toyota Rawal, Rawalpindi";
+const ADDRESS = "123 Demo Boulevard, Sector H-9, Islamabad";
 
 const esc = (s: unknown) =>
   String(s ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;");
@@ -81,7 +81,7 @@ function makeICS(a: Appointment): string {
     "PRODID:-//Central Motors//Appointments//EN",
     "METHOD:PUBLISH",
     "BEGIN:VEVENT",
-    `UID:${a.code}@centralmotors.com.pk`,
+    `UID:${a.code}@example.com`,
     `DTSTAMP:${new Date().toISOString().replace(/[-:]/g, "").slice(0, 15)}Z`,
     `DTSTART:${utc(a.startTime)}`,
     `DTEND:${utc(a.endTime)}`,

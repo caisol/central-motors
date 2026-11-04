@@ -35,7 +35,7 @@ export default function PaintBodyShopPage() {
       tone="red"
       chips={["Open 7 days · incl. Sundays", "Colour-matched paint", "Genuine panels", "Insurance claims", "Factory finish"]}
       book={{ href: "/online-inquiry", label: "Get a repair estimate" }}
-      callPhone="051-4917112"
+      callPhone="051-0000000"
       stats={STATS}
       servicesHeading="Our complete body & paint services"
       servicesIntro="A wide range of body and paint work to keep your vehicle looking pristine, carried out with genuine parts and a factory-matched finish."

@@ -55,7 +55,7 @@ export default async function ContactPage() {
           </div>
           <GoogleMap className="mt-4 h-[260px]" />
           <a
-            href={`https://maps.google.com/?q=${encodeURIComponent(settings.address)}`}
+            href="#"
             target="_blank"
             rel="noreferrer"
             className="mt-2.5 block text-center text-[12.5px] font-bold text-suzuki-blue transition hover:text-suzuki-dark"

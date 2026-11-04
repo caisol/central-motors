@@ -49,7 +49,7 @@ async function main() {
     }
     console.log(`✓ users: ${snapshot.users.length} (snapshot, incl. password hashes)`);
   } else {
-    const email = (process.env.ADMIN_EMAIL || "info@centralmotors.com.pk").toLowerCase();
+    const email = (process.env.ADMIN_EMAIL || "info@example.com").toLowerCase();
     const passwordHash = await bcrypt.hash(process.env.ADMIN_PASSWORD || "ChangeMe123!", 12);
     await db.user.upsert({
       where: { email },
@@ -58,7 +58,7 @@ async function main() {
     });
     console.log(`✓ super-admin: ${email} (env bootstrap — no snapshot present)`);
   }
-  const adminEmail = (process.env.ADMIN_EMAIL || "info@centralmotors.com.pk").toLowerCase();
+  const adminEmail = (process.env.ADMIN_EMAIL || "info@example.com").toLowerCase();
   const admin =
     (await db.user.findUnique({ where: { email: adminEmail } })) ??
     (await db.user.findFirst({ where: { role: "SUPER_ADMIN" }, orderBy: { email: "asc" } }));
@@ -189,13 +189,13 @@ async function main() {
   // config (or encrypted password) the client manages in Admin → Settings.
   const smtpDefaults: Record<string, string> = {
     smtpProvider: "custom",
-    smtpHost: process.env.SMTP_HOST || "mail.centralmotors.com.pk",
+    smtpHost: process.env.SMTP_HOST || "mail.example.com",
     smtpPort: process.env.SMTP_PORT || "465",
     smtpSecure: "true",
-    smtpUser: process.env.SMTP_USER || "info@centralmotors.com.pk",
+    smtpUser: process.env.SMTP_USER || "info@example.com",
     fromName: settings.siteName,
-    fromEmail: process.env.SMTP_USER || "info@centralmotors.com.pk",
-    notifyTo: process.env.MAIL_TO || "info@centralmotors.com.pk",
+    fromEmail: process.env.SMTP_USER || "info@example.com",
+    notifyTo: process.env.MAIL_TO || "info@example.com",
     // smtpPassEnc is intentionally never seeded — set it via Admin → Settings.
   };
   for (const [key, value] of Object.entries(smtpDefaults)) {

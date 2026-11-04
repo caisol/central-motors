@@ -35,7 +35,7 @@ export default function MechanicalWorkshopPage() {
       tone="cool"
       chips={["Open 7 days · incl. Sundays", "Certified technicians", "Genuine parts", "Warranty on work", "Factory-grade tools"]}
       book={{ href: "/service-appointment", label: "Book an appointment" }}
-      callPhone="051-4917112"
+      callPhone="051-0000000"
       stats={STATS}
       servicesHeading="Our complete workshop services"
       servicesIntro="Everything your vehicle needs under one roof, carried out by certified technicians using genuine OEM parts and certified oils."

@@ -8,9 +8,9 @@ import { getEmailConfig } from "@/server/services/settingsService";
  * Configure via env (.env.local locally / Vercel env in prod):
  *   SMTP_HOST   e.g. smtp.titan.email
  *   SMTP_PORT   465 (SSL) or 587 (STARTTLS)
- *   SMTP_USER   full mailbox e.g. info@centralmotors.com.pk
+ *   SMTP_USER   full mailbox e.g. info@example.com
  *   SMTP_PASS   mailbox password
- *   MAIL_FROM   "Central Motors <info@centralmotors.com.pk>"
+ *   MAIL_FROM   "Central Motors <info@example.com>"
  *   MAIL_TO     destination inbox for notifications
  * ------------------------------------------------------------------ */
 
@@ -20,7 +20,7 @@ import { getEmailConfig } from "@/server/services/settingsService";
 const DEALER_NAME = "Central Motors";
 const DEALER_ADDRESS =
   process.env.DEALER_ADDRESS ||
-  "Main G.T. Road, Soan Camp, Opposite Toyota Rawal, Rawalpindi 46000, Pakistan";
+  "123 Demo Boulevard, Sector H-9, Islamabad 44000, Pakistan";
 const SITE_URL = (process.env.NEXT_PUBLIC_SITE_URL || "https://centralmotors.com.pk").replace(/\/$/, "");
 const PRIVACY_URL = `${SITE_URL}/privacy`;
 /** Where a recipient asks to stop these internal notifications. */

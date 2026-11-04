@@ -29,7 +29,7 @@ export default async function ServiceAppointmentPage() {
       {/* workshop location, so customers know exactly where to come */}
       <section className="mx-auto max-w-[860px] px-5 pb-20 pt-2 sm:px-8">
         <h2 className="font-display text-[17px] font-bold text-ink">Where to find the workshop</h2>
-        <p className="mt-1 text-[13.5px] text-ink-muted">Main G.T. Road, Soan Camp, Opposite Toyota Rawal, Rawalpindi. Please arrive 10 minutes before your slot.</p>
+        <p className="mt-1 text-[13.5px] text-ink-muted">123 Demo Boulevard, Sector H-9, Islamabad. Please arrive 10 minutes before your slot.</p>
         <GoogleMap className="mt-4 h-[300px]" />
       </section>
     </>
