@@ -3,7 +3,7 @@ import type { Settings } from "./types";
 export const settings: Settings = {
   siteName: "Central Motors",
   tagline: "Premier 7S Automotive Dealership in Rawalpindi",
-  address: "123 Demo Boulevard, Sector H-9, Islamabad 44000, Pakistan",
+  address: "Jinnah Avenue, Blue Area (Near Centaurus Mall), Islamabad 44000, Pakistan",
   phone: "+92 51 0000000",
   uan: "+92 51 0000000",
   tel: "51 0000000",

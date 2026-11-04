@@ -55,7 +55,7 @@ export default async function ContactPage() {
           </div>
           <GoogleMap className="mt-4 h-[260px]" />
           <a
-            href="#"
+            href="https://maps.google.com/?q=The+Centaurus+Mall,+Blue+Area,+Islamabad"
             target="_blank"
             rel="noreferrer"
             className="mt-2.5 block text-center text-[12.5px] font-bold text-suzuki-blue transition hover:text-suzuki-dark"

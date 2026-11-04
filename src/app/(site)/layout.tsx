@@ -37,7 +37,7 @@ export default async function SiteLayout({ children }: { children: React.ReactNo
     email: settings.email,
     address: {
       "@type": "PostalAddress",
-      streetAddress: "123 Demo Boulevard, Sector H-9",
+      streetAddress: "Jinnah Avenue, Blue Area (Near Centaurus Mall)",
       addressLocality: "Rawalpindi",
       postalCode: "44000",
       addressCountry: "PK",
