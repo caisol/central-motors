@@ -5,8 +5,8 @@ import { SERVICE_ICONS } from "./ServiceIcons";
 type Item = { icon: string; title: string; body: string; href: string };
 
 const BADGES = [
-  { src: "/brand/suzuki-genuine-parts.png", alt: "Genuine Parts", w: 984, h: 337 },
-  { src: "/brand/suzuki-genuine-accessories.png", alt: "Genuine Accessories", w: 966, h: 336 },
+  { src: "/brand/central-motors-genuine-parts.png", alt: "Genuine Parts", w: 984, h: 337 },
+  { src: "/brand/central-motors-genuine-accessories.png", alt: "Genuine Accessories", w: 966, h: 336 },
   { src: "/brand/ecstar.png", alt: "Certified Oils & Fluids", w: 788, h: 350 },
 ];
 
